@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sobre Nosotros | Horizon Capital</title>
+  <meta name="description" content="Equipo directivo de Horizon Capital: Francisco Daza y Carlos Mora." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand"><span class="brandMark"></span><div class="brandName">Horizon Capital</div></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Servicios</a>
+      <a href="experience.html">Experiencia</a>
+      <a class="active" href="about.html">Sobre Nosotros</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Sobre Nosotros</h2>
+      <p class="sub">
+        Somos una firma boutique enfocada en decisiones de capital y estrategia. Combinamos rigor financiero con un estilo de trabajo cercano,
+        orientado a resultados y con entregables claros para inversionistas, bancos y comités.
+      </p>
+
+      <div class="grid2" style="margin-top:16px">
+        <div class="card">
+          <h3>Cómo trabajamos</h3>
+          <p>Proceso ordenado, comunicación directa y enfoque en lo esencial: supuestos, escenarios, riesgos y decisiones accionables.</p>
+        </div>
+        <div class="card">
+          <h3>Confidencialidad</h3>
+          <p>Podemos firmar un acuerdo de confidencialidad (NDA) antes de revisar información sensible.</p>
+        </div>
+      </div>
+
+      <div class="teamGrid">
+        <div class="teamCard">
+          <div class="teamTop">
+            <img src="francisco-daza.jpg" class="teamPhoto" alt="Francisco Daza">
+            <div>
+              <div class="teamName">Francisco Daza</div>
+              <div class="teamRole">Founder & CFO</div>
+            </div>
+          </div>
+          <p class="teamBio">
+            Economista con formación en Alta Gerencia, Business Intelligence y MBA.
+            Enfocado en planeación financiera, control presupuestal y forecasting, con foco en indicadores,
+            auditoría y optimización de recursos.
+          </p>
+          <div class="badges">
+            <span>Forecasting</span><span>Control financiero</span><span>Capital strategy</span>
+          </div>
+        </div>
+
+        <div class="teamCard">
+          <div class="teamTop">
+            <img src="carlos-mora.jpg" class="teamPhoto" alt="Carlos Mora">
+            <div>
+              <div class="teamName">Carlos Mora</div>
+              <div class="teamRole">Founder & COO</div>
+            </div>
+          </div>
+          <p class="teamBio">
+            Ingeniero Industrial con MBA y profundización en finanzas corporativas.
+            Experiencia liderando áreas financieras y de gestión con pensamiento estratégico y orientación a resultados,
+            enfocada en eficiencia operativa y ejecución.
+          </p>
+          <div class="badges">
+            <span>Estrategia</span><span>Eficiencia operativa</span><span>Gestión regional</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnRow" style="margin-top:18px">
+        <a class="btn btnPrimary" href="contact.html">Agendar conversación</a>
+        <a class="btn" href="experience.html">Ver experiencia</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Horizon Capital.</div>
+</footer>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

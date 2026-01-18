@@ -4,346 +4,95 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Horizon Capital | Banca de Inversión Boutique</title>
-  <meta name="description" content="Horizon Capital es una banca de inversión boutique con sede en Bogotá y alcance regional. Estructuración financiera, levantamiento de capital, asesoría estratégica y business plan." />
+  <meta name="description" content="Horizon Capital: banca de inversión boutique y advisory financiero estratégico. Bogotá con alcance regional." />
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --navy:#1C2536;
-      --gold:#B8975D;
-      --graphite:#54585A;
-      --silver:#888B8D;
-      --radius:18px;
-    }
-
-    *{box-sizing:border-box}
-
-    body{
-      margin:0;
-      font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:#FFFFFF;
-      color:var(--navy);
-      line-height:1.55;
-    }
-
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
-
-    header{
-      position:sticky;
-      top:0;
-      background:#FFFFFF;
-      border-bottom:1px solid #E6E8EB;
-      z-index:10;
-    }
-
-    .topbar{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:14px 0;
-    }
-
-    nav a{
-      font-size:12px;
-      letter-spacing:.14em;
-      text-transform:uppercase;
-      margin-left:18px;
-      color:var(--graphite);
-    }
-
-    nav a:hover{color:var(--navy)}
-
-    /* HERO */
-    .hero{
-      padding:70px 0;
-    }
-
-    h1{
-      font-size:40px;
-      margin-bottom:12px;
-      letter-spacing:.02em;
-    }
-
-    .lead{
-      max-width:620px;
-      color:var(--graphite);
-      font-size:16px;
-    }
-
-    .btnRow{
-      margin-top:20px;
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-      padding:12px 18px;
-      border-radius:14px;
-      font-weight:600;
-      border:1px solid #D6D8DB;
-      color:var(--navy);
-      background:#FFFFFF;
-    }
-
-    .btnPrimary{
-      border-color:var(--gold);
-      background:#FBF8F2;
-    }
-
-    /* SECTIONS */
-    section{padding:40px 0}
-
-    h2{
-      font-size:22px;
-      margin-bottom:8px;
-    }
-
-    .sub{
-      color:var(--graphite);
-      font-size:14px;
-    }
-
-    .grid4{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:14px;
-      margin-top:20px;
-    }
-
-    .card{
-      background:#FFFFFF;
-      border:1px solid #E6E8EB;
-      border-radius:var(--radius);
-      padding:18px;
-    }
-
-    .card h3{
-      font-size:14px;
-      margin-bottom:6px;
-    }
-
-    .card p{
-      font-size:13px;
-      color:var(--graphite);
-      margin:0;
-    }
-
-    /* TEAM */
-    .teamGrid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:16px;
-      margin-top:20px;
-    }
-
-    .teamCard{
-      background:#FFFFFF;
-      border:1px solid #E6E8EB;
-      border-radius:var(--radius);
-      padding:18px;
-    }
-
-    .teamTop{
-      display:flex;
-      gap:14px;
-      align-items:center;
-    }
-
-    .teamPhoto{
-      width:70px;
-      height:70px;
-      border-radius:16px;
-      object-fit:cover;
-      border:1px solid var(--gold);
-    }
-
-    .teamName{
-      font-weight:700;
-    }
-
-    .teamRole{
-      font-size:12px;
-      letter-spacing:.16em;
-      text-transform:uppercase;
-      color:var(--silver);
-    }
-
-    .teamBio{
-      font-size:13px;
-      color:var(--graphite);
-      margin-top:10px;
-    }
-
-    .focus{
-      margin-top:10px;
-      font-size:12px;
-    }
-
-    .focus span{
-      display:inline-block;
-      border:1px solid #D6D8DB;
-      padding:6px 10px;
-      border-radius:999px;
-      margin:4px 4px 0 0;
-      color:var(--navy);
-    }
-
-    /* FOOTER */
-    footer{
-      border-top:1px solid #E6E8EB;
-      padding:30px 0 50px;
-      color:var(--graphite);
-      font-size:12px;
-    }
-
-    @media(max-width:900px){
-      .grid4{grid-template-columns:1fr 1fr}
-      .teamGrid{grid-template-columns:1fr}
-      h1{font-size:32px}
-    }
-
-    @media(max-width:520px){
-      nav{display:none}
-      .grid4{grid-template-columns:1fr}
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
 <header>
   <div class="wrap topbar">
-    <strong>HORIZON CAPITAL</strong>
+    <div class="brand">
+      <span class="brandMark"></span>
+      <div class="brandName">Horizon Capital</div>
+    </div>
+
     <nav>
-      <a href="#servicios">Servicios</a>
-      <a href="#socios">Socios</a>
-      <a href="#contacto">Contacto</a>
+      <a class="active" href="index.html">Home</a>
+      <a href="services.html">Servicios</a>
+      <a href="experience.html">Experiencia</a>
+      <a href="about.html">Sobre Nosotros</a>
+      <a href="contact.html">Contacto</a>
     </nav>
   </div>
 </header>
 
 <main>
-
   <section class="hero">
     <div class="wrap">
-      <h1>Horizon Capital</h1>
-      <p class="lead">
-        Banca de inversión boutique con sede en Bogotá y alcance regional.
-        Acompañamos decisiones de capital y estrategia con rigor financiero y ejecución disciplinada.
-      </p>
+      <div class="heroBox">
+        <div class="heroImg" aria-label="Imagen principal"></div>
+        <div class="heroOverlay"></div>
 
-      <div class="btnRow">
-        <a class="btn btnPrimary" href="https://wa.me/573013414466" target="_blank">Agendar conversación</a>
-        <a class="btn" href="mailto:cfo.horizoncapital@gmail.com">Escribir por correo</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="servicios">
-    <div class="wrap">
-      <h2>Servicios</h2>
-      <p class="sub">Soluciones financieras para compañías en crecimiento.</p>
-
-      <div class="grid4">
-        <div class="card">
-          <h3>Estructuración financiera</h3>
-          <p>Diseño de estructuras de capital, escenarios y control financiero.</p>
-        </div>
-        <div class="card">
-          <h3>Levantamiento de capital</h3>
-          <p>Procesos de equity o deuda con inversionistas y entidades financieras.</p>
-        </div>
-        <div class="card">
-          <h3>Asesoría estratégica</h3>
-          <p>Soporte en decisiones críticas de crecimiento y expansión.</p>
-        </div>
-        <div class="card">
-          <h3>Business Plan</h3>
-          <p>Modelos financieros, narrativa y plan de ejecución.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="socios">
-    <div class="wrap">
-      <h2>Socios</h2>
-      <p class="sub">Equipo directivo con enfoque en capital y ejecución.</p>
-
-      <div class="teamGrid">
-
-        <div class="teamCard">
-          <div class="teamTop">
-            <img src="francisco-daza.jpg" class="teamPhoto" alt="Francisco Daza">
-            <div>
-              <div class="teamName">Francisco Daza</div>
-              <div class="teamRole">Founder & CFO</div>
-            </div>
-          </div>
-          <p class="teamBio">
-            Economista con formación en Alta Gerencia, Business Intelligence y MBA.
-            Especializado en planeación financiera, control presupuestal y forecasting,
-            con foco en indicadores, auditoría y optimización de recursos.
+        <div class="heroContent">
+          <div class="kicker"><span class="kickerDot"></span> Bogotá · Alcance regional</div>
+          <h1>Decisiones de capital y estrategia, con claridad y ejecución.</h1>
+          <p class="sub" style="margin-top:10px">
+            Horizon Capital es una firma boutique de banca de inversión y advisory financiero estratégico.
+            Acompañamos compañías en crecimiento y organizaciones consolidadas en procesos de estructuración,
+            levantamiento de capital y planeación para expansión.
           </p>
-          <div class="focus">
-            <span>Forecasting</span>
-            <span>Control financiero</span>
-            <span>Capital strategy</span>
+
+          <div class="btnRow">
+            <a class="btn btnPrimary" href="https://wa.me/573013414466" target="_blank" rel="noopener">Agendar conversación</a>
+            <a class="btn" href="mailto:cfo.horizoncapital@gmail.com">Escribir por correo</a>
+          </div>
+
+          <div class="badges">
+            <span>Estructuración financiera</span>
+            <span>Equity & Deuda</span>
+            <span>Asesoría estratégica</span>
+            <span>Business Plan</span>
           </div>
         </div>
-
-        <div class="teamCard">
-          <div class="teamTop">
-            <img src="carlos-mora.jpg" class="teamPhoto" alt="Carlos Mora">
-            <div>
-              <div class="teamName">Carlos Mora</div>
-              <div class="teamRole">Founder & COO</div>
-            </div>
-          </div>
-          <p class="teamBio">
-            Ingeniero Industrial con MBA y profundización en finanzas corporativas.
-            Más de 12 años liderando áreas financieras y de gestión con enfoque estratégico
-            y orientación a resultados.
-          </p>
-          <div class="focus">
-            <span>Estrategia</span>
-            <span>Eficiencia operativa</span>
-            <span>Gestión regional</span>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <section id="contacto">
+  <hr class="sep">
+
+  <section>
     <div class="wrap">
-      <h2>Contacto</h2>
-      <p class="sub">Si estás evaluando una decisión de capital, conversemos.</p>
-      <div class="btnRow">
-        <a class="btn btnPrimary" href="https://wa.me/573013414466" target="_blank">WhatsApp</a>
-        <a class="btn" href="mailto:cfo.horizoncapital@gmail.com">Correo</a>
+      <div class="grid3">
+        <div class="card">
+          <h3>Enfoque boutique</h3>
+          <p>Trabajo cercano, análisis riguroso y entregables listos para decisión: escenarios, supuestos y recomendaciones accionables.</p>
+        </div>
+        <div class="card">
+          <h3>Mixto: startups y empresas tradicionales</h3>
+          <p>Procesos de capital para compañías en etapa temprana y soporte financiero/estratégico para empresas con operación consolidada.</p>
+        </div>
+        <div class="card">
+          <h3>Confidencialidad</h3>
+          <p>Podemos trabajar bajo NDA antes de revisar información sensible. Comunicación directa, proceso ordenado y criterio.</p>
+        </div>
+      </div>
+
+      <div class="btnRow" style="margin-top:18px">
+        <a class="btn btnPrimary" href="services.html">Ver servicios</a>
+        <a class="btn" href="experience.html">Ver experiencia</a>
       </div>
     </div>
   </section>
-
 </main>
 
 <footer>
-  <div class="wrap">
-    © <span id="y"></span> Horizon Capital. Todos los derechos reservados.
-  </div>
+  <div class="wrap">© <span id="y"></span> Horizon Capital. Todos los derechos reservados.</div>
 </footer>
 
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
-
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
